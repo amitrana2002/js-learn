@@ -12,7 +12,7 @@ symbol = uniquness
 */
 
 let a=2002; // number
-let big_a = 98459437;
+let big_a = 98454059437n; //last n for bigint
 let name="Amit"; //string
 let study=true; //bool
 let state;
