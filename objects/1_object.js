@@ -48,3 +48,10 @@ JUser.greet = function(){
 }
 
 console.log(JUser.greet());
+
+//taking name from object 
+JUser.greet2 = function(){
+    console.log(`Hello, ${this.name} `); 
+}
+
+console.log(JUser.greet2());
