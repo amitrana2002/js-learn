@@ -1,5 +1,6 @@
 
 //forEach -> loop k andr function daal denge
+//foreach me hm return nhi kr skte hn bs print krenge
 const coding =["C++","Java","Python","Ruby","Rails","Javascript","Scala"];
 
 coding.forEach(function(item){
