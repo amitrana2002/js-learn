@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai And Javascript</h1>
+    <button id = "stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Hii Amit");
+    // },2000)
+
+    const hi = function(){
+        console.log("Hello Amit");
+    }
+    setTimeout(hi,2000);
+
+    const changeText=function()
+    {
+        document.querySelector('h1').innerHTML="Welcome to Javascript";
+    }
+
+    const changeagain=function()
+    {
+        document.querySelector('h1').innerHTML="Welcome Again";
+    }
+
+    const stp = setTimeout(changeText,2000);
+    // setTimeout(changeagain,4000);// time from start
+
+    document.querySelector('#stop').addEventListener('click',function()
+    {
+        clearTimeout(stp);//cleartimeout uss event ko hone se rok lega
+        console.log("Stopped");
+    })
+
+ 
+</script>
+</html>
