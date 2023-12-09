@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button> Click me! </button>
+    <p>Hlo</p>
+</body>
+<script>
+  let btn = document.querySelector("button");
+  let text=document.querySelector('p');
+
+  btn.addEventListener("mousedown", event => {
+    if (event.button == 0) {
+      text.innerHTML=`Left mouse button was pressed`;
+    } else if (event.button == 1) {
+        text.innerHTML=`Middle mouse button was pressed`;
+    } else if (event.button == 2) {
+        text.innerHTML=`Right mouse button was pressed`;
+    }
+  });
+</script>
+</html>
